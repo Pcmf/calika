@@ -214,7 +214,16 @@
                 <div class="col-md-6">
                     <div class="imagemPrincipal">
                             <!-- imagem principal do modelo -->
+                     <!--       <img ng-src="img/modelos/{{i.mainimg}}" class="thumbnail" style="max-height: 200px; max-width: 200px">
+                        <br/>
+                    </div>                    
+                    <div class="imagemPrincipal" ng-show="showPrincipal">-->
+                            <!-- imagem principal do modelo -->
                             <img ng-src="img/modelos/{{i.mainimg}}" class="thumbnail" style="max-height: 200px; max-width: 200px">
+                            <div class="form-group">
+                                <label>Imagem Principal</label>
+                                <input type="file" ng-model-instant id="fileToUpload" onchange="angular.element(this).scope().setFiles(this)" />
+                            </div> 
                         <br/>
                     </div>
                     <label>Imagens de detalhe </label>
