@@ -43,8 +43,8 @@ angular.module('appCalika').controller('temaController',function($scope,$http,$r
         $scope.filename = files[0]['name'];
 //        alert(filename);
         ImageTools.resize(files[0], {
-            width: 200, // maximum width
-            height: 200 // maximum height
+            width: 1000, // maximum width
+            height: 1000 // maximum height
         }, function(blob, didItResize) {
             $scope.imgBlob = blob;
             $scope.i.imagem = $scope.filename;

@@ -140,10 +140,12 @@ if($result0){
 $doc = '../doc/DC'. date('d-m-Y').'_'.$ref.'.pdf';
 $pdf->Output($doc,'F');
 
-}
+
 
 $path = 'doc/DC'. date('d-m-Y').'_'.$ref.'.pdf';
 mysqli_query($con, sprintf("UPDATE pedido SET situacao=2, doc4client='%s' WHERE id=%s ",$path,$pid));
+echo 'doc/DC'. date('d-m-Y').'_'.$ref.'.pdf';
+}
 
 //$result001 = mysqli_query($con, sprintf("SELECT * FROM emailservico"));
 //if($result001){
