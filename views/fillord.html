@@ -86,9 +86,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td ng-if="tipo==0"><input type="text" ng-model="priceUnit" style="width: 60px" ng-change="updatePrice(priceUnit,modelo.id)"/></td>
+                            <td ng-if="tipo==0"><input type="text" ng-model="mPic.preco" style="width: 60px" ng-change="updatePrice(mPic.preco,modelo.id)"/></td>
                             <td>{{qtyTotal}}</td>
-                            <td ng-if="tipo==0">{{qtyTotal * priceUnit}} €</td>
+                            <td ng-if="tipo==0">{{qtyTotal * mPic.preco}} €</td>
                         </tr>
                     </tbody>
                 </table>
